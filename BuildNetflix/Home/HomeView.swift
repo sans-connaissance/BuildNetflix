@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    var vm = HomeVM()
+    
     var body: some View {
-        Text("Hello, Netflix")
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            
+            ForEach(vm.allCategories, id: \.self) { category in
+                VStack {
+                    HStack {
+                        Text(category)
+                        Spacer()
+                    }
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack{
+                            ForEach(vm.getMovie(forCat: category)) { movie in
+                                StandardHomeMovie(movie: movie)
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .foregroundColor(.white)
     }
 }
 

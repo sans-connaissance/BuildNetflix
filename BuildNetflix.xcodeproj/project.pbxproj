@@ -21,6 +21,9 @@
 		4177ED272783F14200C08BA8 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED262783F14200C08BA8 /* GlobalHelpers.swift */; };
 		4177ED282783F14200C08BA8 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED262783F14200C08BA8 /* GlobalHelpers.swift */; };
 		4177ED292783F14200C08BA8 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED262783F14200C08BA8 /* GlobalHelpers.swift */; };
+		4177ED2B2783F4EB00C08BA8 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED2A2783F4EB00C08BA8 /* HomeVM.swift */; };
+		4177ED2C2783F4EB00C08BA8 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED2A2783F4EB00C08BA8 /* HomeVM.swift */; };
+		4177ED2D2783F4EB00C08BA8 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED2A2783F4EB00C08BA8 /* HomeVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,7 @@
 		4177ED222783F0A900C08BA8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		4177ED242783F0E300C08BA8 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 		4177ED262783F14200C08BA8 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		4177ED2A2783F4EB00C08BA8 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 		4162A7052783EBC200950372 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4177ED2A2783F4EB00C08BA8 /* HomeVM.swift */,
 				4162A7032783EBB400950372 /* HomeView.swift */,
 				4177ED222783F0A900C08BA8 /* Movie.swift */,
 				4177ED242783F0E300C08BA8 /* StandardHomeMovie.swift */,
@@ -289,6 +294,7 @@
 			files = (
 				4177ED272783F14200C08BA8 /* GlobalHelpers.swift in Sources */,
 				4162A7042783EBB400950372 /* HomeView.swift in Sources */,
+				4177ED2B2783F4EB00C08BA8 /* HomeVM.swift in Sources */,
 				4162A6DC2783EB4F00950372 /* ContentView.swift in Sources */,
 				4177ED252783F0E300C08BA8 /* StandardHomeMovie.swift in Sources */,
 				4177ED232783F0A900C08BA8 /* Movie.swift in Sources */,
@@ -300,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4177ED2C2783F4EB00C08BA8 /* HomeVM.swift in Sources */,
 				4177ED282783F14200C08BA8 /* GlobalHelpers.swift in Sources */,
 				4162A6EB2783EB5000950372 /* BuildNetflixTests.swift in Sources */,
 			);
@@ -312,6 +319,7 @@
 				4177ED292783F14200C08BA8 /* GlobalHelpers.swift in Sources */,
 				4162A6F72783EB5000950372 /* BuildNetflixUITestsLaunchTests.swift in Sources */,
 				4162A6F52783EB5000950372 /* BuildNetflixUITests.swift in Sources */,
+				4177ED2D2783F4EB00C08BA8 /* HomeVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
