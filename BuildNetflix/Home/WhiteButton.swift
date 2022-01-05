@@ -9,17 +9,8 @@ import SwiftUI
 
 struct WhiteButton: View {
     var text: String
-    var isOnImage: String
-    var isOffImage: String
-    var isOn: Bool
+    var imageName: String
     
-    var imageName: String {
-        if isOn {
-            return isOnImage
-        } else {
-            return isOffImage
-        }
-    }
     
     
     
@@ -29,22 +20,31 @@ struct WhiteButton: View {
             action()
         } label: {
             HStack {
+                Spacer()
                 Image(systemName: imageName)
-                    .foregroundColor(.white)
+                    .font(.headline)
                 Text(text)
-                    .foregroundColor(.white)
                     .font(.system(size: 16))
                     .bold()
+                Spacer()
 
             }
+            .padding(.vertical, 6)
+            .foregroundColor(.black)
+            .background(Color.white)
+            .cornerRadius(3.0)
         }
     }
 }
 
 struct WhiteButton_Previews: PreviewProvider {
     static var previews: some View {
-        WhiteButton(text: "Play", isOnImage: "triangle", isOffImage: "square", isOn: true) {
-            // to add
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            WhiteButton(text: "Play", imageName: "play.fill") {
+                //
+            }
         }
     }
 }
