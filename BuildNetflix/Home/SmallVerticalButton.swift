@@ -9,19 +9,37 @@ import SwiftUI
 
 struct SmallVerticalButton: View {
     var text: String
-    
     var isOnImage: String
     var isOffImage: String
-    
     var isOn: Bool
     
+    var imageName: String {
+        if isOn {
+            return isOnImage
+        } else {
+            return isOffImage
+        }
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            //action
+        } label: {
+            VStack {
+                Image(systemName: imageName)
+                    .foregroundColor(.white)
+            }
+        }
+        
     }
 }
 
 struct SmallVerticalButton_Previews: PreviewProvider {
     static var previews: some View {
-        SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true)
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true)
+        }
     }
 }
