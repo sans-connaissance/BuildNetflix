@@ -11,6 +11,19 @@ import SwiftUI
 struct TopMoviePreview: View {
     var movie: Movie
     
+    //This is not in a view model because it is a func for displaying UI elements. And a seperate VM here might be confusing, since it would just have one func...
+    func isCategoryLast(_ cat: String) -> Bool {
+        let catCount = movie.categories.count
+        
+        if let index = movie.categories.firstIndex(of: cat) {
+            if index + 1 != catCount {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
     var body: some View {
         ZStack {
             KFImage(movie.thumbnailURL)
@@ -20,7 +33,23 @@ struct TopMoviePreview: View {
             
             VStack {
                 Spacer()
-                Text("Strings for Categories")
+                HStack {
+                    ForEach(movie.categories, id: \.self) { category in
+                        HStack {
+                            Text(category)
+                            
+                            if !isCategoryLast(category) {
+
+                                Image(systemName: "circle.fill")
+                                    .foregroundColor(.blue)
+                                    .font(.system(size: 3))
+                                
+                            }
+
+                        }
+                        
+                    }
+                }
                 Text("Categories")
             }
         }
