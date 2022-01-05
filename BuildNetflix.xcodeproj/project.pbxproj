@@ -27,6 +27,7 @@
 		4177ED4027855F3300C08BA8 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED3F27855F3300C08BA8 /* TopMoviePreview.swift */; };
 		4177ED4127855F3300C08BA8 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED3F27855F3300C08BA8 /* TopMoviePreview.swift */; };
 		4177ED4227855F3300C08BA8 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED3F27855F3300C08BA8 /* TopMoviePreview.swift */; };
+		41F601A72785EE2600BE0239 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		4177ED262783F14200C08BA8 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		4177ED2A2783F4EB00C08BA8 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		4177ED3F27855F3300C08BA8 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
+		41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				4177ED242783F0E300C08BA8 /* StandardHomeMovie.swift */,
 				4177ED262783F14200C08BA8 /* GlobalHelpers.swift */,
 				4177ED3F27855F3300C08BA8 /* TopMoviePreview.swift */,
+				41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				4177ED4027855F3300C08BA8 /* TopMoviePreview.swift in Sources */,
 				4177ED232783F0A900C08BA8 /* Movie.swift in Sources */,
 				4162A6DA2783EB4F00950372 /* BuildNetflixApp.swift in Sources */,
+				41F601A72785EE2600BE0239 /* SmallVerticalButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
