@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     var vm = HomeVM()
     
     var body: some View {
