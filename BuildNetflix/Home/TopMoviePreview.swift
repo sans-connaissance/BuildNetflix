@@ -37,7 +37,7 @@ struct TopMoviePreview: View {
                         HStack {
                             Text(category)
                                 .font(.footnote)
-                            
+                            //Running a func in a ForEach like this is kind of cool.
                             if !isCategoryLast(category) {
                                 Image(systemName: "circle.fill")
                                     .foregroundColor(.blue)
@@ -64,6 +64,7 @@ struct TopMoviePreview: View {
                 }
                 
             }
+            .background(LinearGradient.blackOpacityGradient.padding(.top, 250))
         }
         .foregroundColor(.white)
     }
