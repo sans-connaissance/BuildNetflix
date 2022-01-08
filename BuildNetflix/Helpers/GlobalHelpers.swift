@@ -93,5 +93,13 @@ extension LinearGradient {
         gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.95)]),
         startPoint: .top,
         endPoint: .bottom)
-    
+}
+
+/// from https://www.udemy.com/course/swiftui-netflix
+extension String {
+    func widthOfString(usingFont font: UIFont) -> CGFloat {
+        let fontAttributes = [NSAttributedString.Key.font: font]
+        let size = self.size(withAttributes: fontAttributes)
+        return size.width
+    }
 }

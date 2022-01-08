@@ -64,6 +64,7 @@ struct MovieDetail: View {
                             Spacer()
                         }
                         .padding(.leading, 20)
+                        //CustomTabSwitcher()
                     }
                     .padding(.horizontal, 10)
                 }
@@ -151,3 +152,4 @@ struct CurrentEpisodeInformation: View {
         }
     }
 }
+
