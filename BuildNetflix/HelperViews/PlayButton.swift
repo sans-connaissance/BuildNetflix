@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct WhiteButton: View {
+struct PlayButton: View {
     var text: String
     var imageName: String
+    ///default color is white if nothing is passed in
+    var backgroundColor: Color = Color.white
     
     
     
@@ -30,8 +32,8 @@ struct WhiteButton: View {
 
             }
             .padding(.vertical, 6)
-            .foregroundColor(.black)
-            .background(Color.white)
+            .foregroundColor(backgroundColor == .white ? .black : .white)
+            .background(backgroundColor)
             .cornerRadius(3.0)
         }
     }
@@ -42,7 +44,7 @@ struct WhiteButton_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            WhiteButton(text: "Play", imageName: "play.fill") {
+            PlayButton(text: "Play", imageName: "play.fill") {
                 //
             }
         }

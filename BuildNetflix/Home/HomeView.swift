@@ -24,7 +24,7 @@ struct HomeView: View {
                     
                     TopRowButtons()
                     
-                    TopMoviePreview(movie: exampleMovie7)
+                    TopMoviePreview(movie: exampleMovie4)
                         .frame(width: screen.width)
                         .padding(.top, -110)
                         .zIndex(-1)
