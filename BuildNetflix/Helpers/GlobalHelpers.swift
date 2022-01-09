@@ -24,6 +24,34 @@ var randomExampleImageURL: URL {
 
 let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
 
+let episode1 = Episode(
+    name: "Spiderman returns",
+    season: 1,
+    episodeNumber: 1,
+    thumbnailImageURLString: "https://picsum.photos/300/102",
+    description: "hey look, spiderman came back and it's a big deal for everyone involved",
+    length: 54,
+    videoURL: exampleImageURL)
+
+let episode2 = Episode(
+    name: "Spiderman is in trouble",
+    season: 1,
+    episodeNumber: 2,
+    thumbnailImageURLString: "https://picsum.photos/300/102",
+    description: "Spiderman is in trouble, will he be able to get out of this trouble? Tune in to find out",
+    length: 54,
+    videoURL: exampleImageURL)
+
+let episode3 = Episode(
+    name: "The one with Spiderman",
+    season: 1,
+    episodeNumber: 3,
+    thumbnailImageURLString: "https://picsum.photos/300/102",
+    description: "Spiderman and Ross decide to help Joey get an audition. Rachel and Monica help Chandler say hi to Spiderman with confidence.",
+    length: 54,
+    videoURL: exampleImageURL)
+
+
 let exampleMovie1 = Movie(
     id: UUID().uuidString,
     name: "Dark",

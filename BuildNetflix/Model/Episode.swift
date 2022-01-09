@@ -12,9 +12,12 @@ struct Episode: Identifiable {
     
     var name: String
     var season: Int
+    var episodeNumber: Int
     var thumbnailImageURLString: String
     var description: String
     var length: Int
+    
+    var videoURL: URL
     
     /// in production this should safely unwrap and throw an error message if it doesn't work out.
     var thumbnailURL: URL {
