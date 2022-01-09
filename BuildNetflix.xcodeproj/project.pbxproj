@@ -34,6 +34,7 @@
 		41F601BB2789DB7D00BE0239 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601BA2789DB7D00BE0239 /* MovieDetail.swift */; };
 		41F601BD2789F92500BE0239 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601BC2789F92500BE0239 /* Episode.swift */; };
 		41F601BF278A4FA400BE0239 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601BE278A4FA400BE0239 /* CustomTabSwitcher.swift */; };
+		41F601C1278A5F0300BE0239 /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601C0278A5F0300BE0239 /* MoreLikeThis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		41F601BA2789DB7D00BE0239 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		41F601BC2789F92500BE0239 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		41F601BE278A4FA400BE0239 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
+		41F601C0278A5F0300BE0239 /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			children = (
 				41F601BA2789DB7D00BE0239 /* MovieDetail.swift */,
 				41F601BE278A4FA400BE0239 /* CustomTabSwitcher.swift */,
+				41F601C0278A5F0300BE0239 /* MoreLikeThis.swift */,
 			);
 			path = DetailVIews;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				4177ED4027855F3300C08BA8 /* TopMoviePreview.swift in Sources */,
 				4177ED232783F0A900C08BA8 /* Movie.swift in Sources */,
 				4162A6DA2783EB4F00950372 /* BuildNetflixApp.swift in Sources */,
+				41F601C1278A5F0300BE0239 /* MoreLikeThis.swift in Sources */,
 				41F601BF278A4FA400BE0239 /* CustomTabSwitcher.swift in Sources */,
 				41F601A72785EE2600BE0239 /* SmallVerticalButton.swift in Sources */,
 				41F601A92785FB6A00BE0239 /* PlayButton.swift in Sources */,

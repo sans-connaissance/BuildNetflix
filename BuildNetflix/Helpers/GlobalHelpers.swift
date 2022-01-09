@@ -19,6 +19,7 @@ let exampleMovie1 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
+    moreLikeThisMovies: [exampleMovie3, exampleMovie4],
     promotionHeadline: "Watch this now!")
 
 let exampleMovie2 = Movie(
@@ -31,6 +32,7 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
+    moreLikeThisMovies: [ exampleMovie5, exampleMovie6],
     promotionHeadline: "Season 3 won awards!")
 
 let exampleMovie3 = Movie(
@@ -44,6 +46,7 @@ let exampleMovie3 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
+    moreLikeThisMovies: [],
     promotionHeadline: "Don't miss this!")
 
 let exampleMovie4 = Movie(
@@ -56,7 +59,8 @@ let exampleMovie4 = Movie(
     numberOfSeasons: 4,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Frankfurt Industries",
-    cast: "Katie Malicke, Jojo Malicke")
+    cast: "Katie Malicke, Jojo Malicke",
+    moreLikeThisMovies: [])
 
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
@@ -68,7 +72,8 @@ let exampleMovie5 = Movie(
     numberOfSeasons: 2,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Frankfurt Industries",
-    cast: "Katie Malicke, Jojo Malicke")
+    cast: "Katie Malicke, Jojo Malicke",
+    moreLikeThisMovies: [])
 
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
@@ -80,10 +85,11 @@ let exampleMovie6 = Movie(
     numberOfSeasons: 3,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Frankfurt Industries",
-    cast: "Katie Malicke, Jojo Malicke")
+    cast: "Katie Malicke, Jojo Malicke",
+    moreLikeThisMovies: [])
 
 
-let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+var exampleMovies: [Movie] { [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled() }
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Begin and end", description: "Five days before the end of this tutorial, I started to think about doing another tutorial", season: 1, episode: 1)
 
