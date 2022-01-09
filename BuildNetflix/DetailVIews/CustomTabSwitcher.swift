@@ -45,11 +45,12 @@ struct CustomTabSwitcher: View {
                 }
             }
             // selected view
+            // these do no have scroll views because they will be within the scrollview of the parent when this view is embedded later
             switch currentTab {
             case .episodes:
                 Text("EPISODES")
             case .trailers:
-                Text("Trailers")
+                TrailerList(trailers: movie.trailers)
             case .more:
                 MoreLikeThis(movies: movie.moreLikeThisMovies)
             }

@@ -18,6 +18,7 @@ struct MoreLikeThis: View {
         GridItem(.flexible())]
     
     var body: some View {
+        // this scrollview might need to be removed
         ScrollView {
             LazyVGrid(columns: columns) {
                 

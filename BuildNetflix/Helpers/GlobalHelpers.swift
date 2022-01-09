@@ -8,6 +8,22 @@
 import Foundation
 import SwiftUI
 
+let exampleVideoURL = URL(string: "https://www.youtube.com/watch?v=2WDoyn6POaM")!
+
+let exampleImageURL = URL(string: "https://picsum.photos/300/102")!
+let exampleImageURL2 = URL(string: "https://picsum.photos/300/103")!
+let exampleImageURL3 = URL(string: "https://picsum.photos/300/104")!
+
+let exampleTrailer1 = Trailer(name: "Season 3 Trailer", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer2 = Trailer(name: "Hero's Journey", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer3 = Trailer(name: "The best show ever", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+
+var randomExampleImageURL: URL {
+    return [exampleImageURL, exampleImageURL2, exampleImageURL3].randomElement() ?? exampleImageURL
+}
+
+let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
+
 let exampleMovie1 = Movie(
     id: UUID().uuidString,
     name: "Dark",
@@ -20,7 +36,8 @@ let exampleMovie1 = Movie(
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
     moreLikeThisMovies: [exampleMovie3, exampleMovie4],
-    promotionHeadline: "Watch this now!")
+    promotionHeadline: "Watch this now!",
+    trailers: exampleTrailers)
 
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -33,7 +50,8 @@ let exampleMovie2 = Movie(
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
     moreLikeThisMovies: [ exampleMovie5, exampleMovie6],
-    promotionHeadline: "Season 3 won awards!")
+    promotionHeadline: "Season 3 won awards!",
+    trailers: exampleTrailers)
 
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
@@ -47,7 +65,8 @@ let exampleMovie3 = Movie(
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
     moreLikeThisMovies: [],
-    promotionHeadline: "Don't miss this!")
+    promotionHeadline: "Don't miss this!",
+    trailers: exampleTrailers)
 
 let exampleMovie4 = Movie(
     id: UUID().uuidString,
@@ -60,7 +79,8 @@ let exampleMovie4 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
-    moreLikeThisMovies: [])
+    moreLikeThisMovies: [],
+    trailers: exampleTrailers)
 
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
@@ -73,7 +93,8 @@ let exampleMovie5 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
-    moreLikeThisMovies: [])
+    moreLikeThisMovies: [],
+    trailers: exampleTrailers)
 
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
@@ -86,7 +107,8 @@ let exampleMovie6 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
-    moreLikeThisMovies: [])
+    moreLikeThisMovies: [],
+    trailers: exampleTrailers)
 
 
 var exampleMovies: [Movie] { [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled() }
