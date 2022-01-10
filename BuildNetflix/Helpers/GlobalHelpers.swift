@@ -43,7 +43,7 @@ let episode2 = Episode(
     videoURL: exampleImageURL)
 
 let episode3 = Episode(
-    name: "The one with Spiderman",
+    name: "The one with Spiderman and all the badguys! on noo no nono",
     season: 1,
     episodeNumber: 3,
     thumbnailImageURLString: "https://picsum.photos/300/102",
@@ -93,6 +93,7 @@ let exampleMovie1 = Movie(
     creators: "Frankfurt Industries",
     cast: "Katie Malicke, Jojo Malicke",
     moreLikeThisMovies: [exampleMovie3, exampleMovie4],
+    episodes: allExampleEpisodes,
     promotionHeadline: "Watch this now!",
     trailers: exampleTrailers)
 

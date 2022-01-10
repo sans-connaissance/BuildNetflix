@@ -10,6 +10,8 @@ import SwiftUI
 struct CustomTabSwitcher: View {
     
     @State private var currentTab: CustomTab = .episodes
+    @Binding var showSeasonPicker: Bool
+    @Binding var selectedSeason: Int
     
     var tabs: [CustomTab]
     var movie: Movie
@@ -48,7 +50,7 @@ struct CustomTabSwitcher: View {
             // these do no have scroll views because they will be within the scrollview of the parent when this view is embedded later
             switch currentTab {
             case .episodes:
-                Text("EPISODES")
+                EpisodesView(showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason, episodes: movie.episodes ?? [])
             case .trailers:
                 TrailerList(trailers: movie.trailers)
             case .more:
@@ -72,7 +74,7 @@ struct CustomTabSwitcher_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: exampleMovie1)
+            CustomTabSwitcher(showSeasonPicker: .constant(true), selectedSeason: .constant(1), tabs: [.episodes, .trailers, .more], movie: exampleMovie1)
         }
         
     }
