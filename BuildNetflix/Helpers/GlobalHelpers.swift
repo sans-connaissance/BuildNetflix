@@ -51,6 +51,35 @@ let episode3 = Episode(
     length: 54,
     videoURL: exampleImageURL)
 
+let episode4 = Episode(
+    name: "Spiderman returns",
+    season: 2,
+    episodeNumber: 1,
+    thumbnailImageURLString: "https://picsum.photos/300/108",
+    description: "hey look, spiderman came back and it's a big deal for everyone involved",
+    length: 54,
+    videoURL: exampleImageURL)
+
+let episode5 = Episode(
+    name: "Spiderman is in trouble",
+    season: 2,
+    episodeNumber: 2,
+    thumbnailImageURLString: "https://picsum.photos/300/109",
+    description: "Spiderman is in trouble, will he be able to get out of this trouble? Tune in to find out",
+    length: 54,
+    videoURL: exampleImageURL)
+
+let episode6 = Episode(
+    name: "The one with Spiderman",
+    season: 2,
+    episodeNumber: 3,
+    thumbnailImageURLString: "https://picsum.photos/300/101",
+    description: "Spiderman and Ross decide to help Joey get an audition. Rachel and Monica help Chandler say hi to Spiderman with confidence.",
+    length: 54,
+    videoURL: exampleImageURL)
+
+var allExampleEpisodes = [episode1, episode2, episode3, episode4, episode5, episode6 ]
+
 
 let exampleMovie1 = Movie(
     id: UUID().uuidString,

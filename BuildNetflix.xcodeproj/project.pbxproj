@@ -39,6 +39,7 @@
 		41F601C5278A6BEE00BE0239 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601C4278A6BEE00BE0239 /* SwiftUIVideoView.swift */; };
 		41F601C8278B3A6700BE0239 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601C7278B3A6700BE0239 /* VideoPreviewImage.swift */; };
 		41F601CA278B3CA600BE0239 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601C9278B3CA600BE0239 /* TrailerList.swift */; };
+		41F601CC278B55C700BE0239 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601CB278B55C700BE0239 /* EpisodesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		41F601C4278A6BEE00BE0239 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		41F601C7278B3A6700BE0239 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		41F601C9278B3CA600BE0239 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		41F601CB278B55C700BE0239 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				41F601BE278A4FA400BE0239 /* CustomTabSwitcher.swift */,
 				41F601C0278A5F0300BE0239 /* MoreLikeThis.swift */,
 				41F601C9278B3CA600BE0239 /* TrailerList.swift */,
+				41F601CB278B55C700BE0239 /* EpisodesView.swift */,
 			);
 			path = DetailVIews;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F601CC278B55C700BE0239 /* EpisodesView.swift in Sources */,
 				4177ED272783F14200C08BA8 /* GlobalHelpers.swift in Sources */,
 				41F601C3278A6BAC00BE0239 /* Trailer.swift in Sources */,
 				41F601BD2789F92500BE0239 /* Episode.swift in Sources */,
