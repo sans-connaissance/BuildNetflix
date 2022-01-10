@@ -7,7 +7,13 @@
 
 import Foundation
 
-struct Movie: Identifiable {
+struct Movie: Identifiable, Equatable {
+    static func == (lhs: Movie, rhs: Movie) -> Bool {
+        return lhs.name == rhs.name && lhs.id == rhs.id
+    }
+    
+    
+    
     var id: String
     var name: String
     var thumbnailURL: URL
