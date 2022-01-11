@@ -28,6 +28,8 @@
 		4177ED4127855F3300C08BA8 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED3F27855F3300C08BA8 /* TopMoviePreview.swift */; };
 		4177ED4227855F3300C08BA8 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177ED3F27855F3300C08BA8 /* TopMoviePreview.swift */; };
 		41A3A3C4278CFE7C0061F92D /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3A3C3278CFE7C0061F92D /* HomeStack.swift */; };
+		41A3A3C7278DE2F10061F92D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3A3C6278DE2F10061F92D /* SearchBar.swift */; };
+		41DAC0DB278DF2AE003CA326 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DAC0DA278DF2AE003CA326 /* Colors.swift */; };
 		41F601A72785EE2600BE0239 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */; };
 		41F601A92785FB6A00BE0239 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601A82785FB6A00BE0239 /* PlayButton.swift */; };
 		41F601B52789DA7500BE0239 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */; };
@@ -78,6 +80,8 @@
 		4177ED2A2783F4EB00C08BA8 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		4177ED3F27855F3300C08BA8 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		41A3A3C3278CFE7C0061F92D /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
+		41A3A3C6278DE2F10061F92D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		41DAC0DA278DF2AE003CA326 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		41F601A82785FB6A00BE0239 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		41F601BA2789DB7D00BE0239 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 		4162A6D82783EB4F00950372 /* BuildNetflix */ = {
 			isa = PBXGroup;
 			children = (
+				41A3A3C5278DE2E50061F92D /* Search */,
 				41F601C6278B3A2100BE0239 /* VIdeoPlayer */,
 				41F601B92789DB6E00BE0239 /* DetailVIews */,
 				4162A7052783EBC200950372 /* Home */,
@@ -189,6 +194,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		41A3A3C5278DE2E50061F92D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				41A3A3C6278DE2F10061F92D /* SearchBar.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		41F601B42789DA6400BE0239 /* HelperViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				4177ED262783F14200C08BA8 /* GlobalHelpers.swift */,
+				41DAC0DA278DF2AE003CA326 /* Colors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -376,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41F601CC278B55C700BE0239 /* EpisodesView.swift in Sources */,
+				41DAC0DB278DF2AE003CA326 /* Colors.swift in Sources */,
 				4177ED272783F14200C08BA8 /* GlobalHelpers.swift in Sources */,
 				41F601C3278A6BAC00BE0239 /* Trailer.swift in Sources */,
 				41F601BD2789F92500BE0239 /* Episode.swift in Sources */,
@@ -389,6 +404,7 @@
 				4162A6DA2783EB4F00950372 /* BuildNetflixApp.swift in Sources */,
 				41F601C1278A5F0300BE0239 /* MoreLikeThis.swift in Sources */,
 				41A3A3C4278CFE7C0061F92D /* HomeStack.swift in Sources */,
+				41A3A3C7278DE2F10061F92D /* SearchBar.swift in Sources */,
 				41F601BF278A4FA400BE0239 /* CustomTabSwitcher.swift in Sources */,
 				41F601CA278B3CA600BE0239 /* TrailerList.swift in Sources */,
 				41F601A72785EE2600BE0239 /* SmallVerticalButton.swift in Sources */,
