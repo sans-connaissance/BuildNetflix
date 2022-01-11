@@ -30,6 +30,7 @@
 		41A3A3C4278CFE7C0061F92D /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3A3C3278CFE7C0061F92D /* HomeStack.swift */; };
 		41A3A3C7278DE2F10061F92D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3A3C6278DE2F10061F92D /* SearchBar.swift */; };
 		41DAC0DB278DF2AE003CA326 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DAC0DA278DF2AE003CA326 /* Colors.swift */; };
+		41DAC0DD278E15F1003CA326 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DAC0DC278E15F0003CA326 /* ActivityIndicator.swift */; };
 		41F601A72785EE2600BE0239 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */; };
 		41F601A92785FB6A00BE0239 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601A82785FB6A00BE0239 /* PlayButton.swift */; };
 		41F601B52789DA7500BE0239 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */; };
@@ -82,6 +83,7 @@
 		41A3A3C3278CFE7C0061F92D /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		41A3A3C6278DE2F10061F92D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		41DAC0DA278DF2AE003CA326 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		41DAC0DC278E15F0003CA326 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		41F601A82785FB6A00BE0239 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		41F601BA2789DB7D00BE0239 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
@@ -148,7 +150,6 @@
 				41F601C6278B3A2100BE0239 /* VIdeoPlayer */,
 				41F601B92789DB6E00BE0239 /* DetailVIews */,
 				4162A7052783EBC200950372 /* Home */,
-				41F601B42789DA6400BE0239 /* HelperViews */,
 				41F601B82789DAB200BE0239 /* Model */,
 				41F601B72789DAA500BE0239 /* Helpers */,
 				4162A6D92783EB4F00950372 /* BuildNetflixApp.swift */,
@@ -202,22 +203,16 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		41F601B42789DA6400BE0239 /* HelperViews */ = {
+		41F601B72789DAA500BE0239 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				41F601A62785EE2600BE0239 /* SmallVerticalButton.swift */,
 				41F601A82785FB6A00BE0239 /* PlayButton.swift */,
 				4177ED3F27855F3300C08BA8 /* TopMoviePreview.swift */,
 				4177ED242783F0E300C08BA8 /* StandardHomeMovie.swift */,
-			);
-			path = HelperViews;
-			sourceTree = "<group>";
-		};
-		41F601B72789DAA500BE0239 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
 				4177ED262783F14200C08BA8 /* GlobalHelpers.swift */,
 				41DAC0DA278DF2AE003CA326 /* Colors.swift */,
+				41DAC0DC278E15F0003CA326 /* ActivityIndicator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -401,6 +396,7 @@
 				4177ED252783F0E300C08BA8 /* StandardHomeMovie.swift in Sources */,
 				4177ED4027855F3300C08BA8 /* TopMoviePreview.swift in Sources */,
 				4177ED232783F0A900C08BA8 /* Movie.swift in Sources */,
+				41DAC0DD278E15F1003CA326 /* ActivityIndicator.swift in Sources */,
 				4162A6DA2783EB4F00950372 /* BuildNetflixApp.swift in Sources */,
 				41F601C1278A5F0300BE0239 /* MoreLikeThis.swift in Sources */,
 				41A3A3C4278CFE7C0061F92D /* HomeStack.swift in Sources */,

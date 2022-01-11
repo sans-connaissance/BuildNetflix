@@ -10,6 +10,9 @@ import SwiftUI
 struct SearchBar: View {
     
     @State private var text: String = ""
+    @State private var isEditing = true
+    @State private var isLoading = true
+    
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -26,20 +29,33 @@ struct SearchBar: View {
                     .background(Color.graySearchBackground)
                     .cornerRadius(8)
                     .foregroundColor(.white)
+                    .onTapGesture {
+                        isEditing = true
+                    }
                     
                 
-                
-                Button {
-                    //
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundColor(.graySearchText)
+                if isLoading {
+                    
+                    Color.red
                         .frame(width: 35, height: 35)
+                    
+                } else {
+                    
+                    Button {
+                        text = ""
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(.graySearchText)
+                            .frame(width: 35, height: 35)
+                    }
+                    .padding(.trailing, 18)
+                    
                 }
-                .padding(.trailing, 18)
+
 
                 Button {
-                    //clear text, hide both buttons, give up first responder
+                    text = ""
+                    isEditing = false
                 } label: {
                     Text("Cancel")
                         .foregroundColor(.graySearchText)
