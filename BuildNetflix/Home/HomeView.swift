@@ -35,31 +35,7 @@ struct HomeView: View {
                         .padding(.top, -110)
                         .zIndex(-1)
                     
-                    ForEach(vm.allCategories, id: \.self) { category in
-                        VStack {
-                            HStack {
-                                Text(category)
-                                    .font(.title3)
-                                    .bold()
-                                Spacer()
-                            }
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                //This lazy hstack is optional
-                                LazyHStack{
-                                    ForEach(vm.getMovie(forCat: category)) { movie in
-                                        StandardHomeMovie(movie: movie)
-                                            .frame(width: 100, height: 200)
-                                            .padding(.horizontal, 20)
-                                            .onTapGesture {
-                                                movieDetailToShow = movie
-                                                
-                                                
-                                            }
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    HomeStack(vm: vm, topRowSelection: topRowSelection, selectedGenre: homeGenre , movieDetailToShow: $movieDetailToShow)
                 }
             }
             // the if != nil is a safe check to ensure that the movedetailtoshow is unwrapped
@@ -68,6 +44,78 @@ struct HomeView: View {
                 //MARK TO DO: Change to navigation link or fullScreen Cover
                     .animation(.default)
                     .transition(.opacity)
+            }
+            
+            if showTopRowSelection {
+                Group {
+                    Color.black.opacity(0.9)
+                    VStack(spacing: 40) {
+                        Spacer()
+                        ForEach(HomeTopRow.allCases, id: \.self) { topRow in
+                            
+                            Button {
+                                topRowSelection = topRow
+                                showTopRowSelection = false
+                                
+                            } label: {
+                                if topRow == topRowSelection {
+                                    Text("\(topRow.rawValue)")
+                                        .bold()
+                                } else {
+                                    Text("\(topRow.rawValue)")
+                                        .foregroundColor(.gray)
+                                }
+                            }
+                        }
+                        Spacer()
+                        Button {
+                            showTopRowSelection = false
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 40))
+                        }.padding(.bottom, 30)
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
+            }
+            
+            if showGenreSelection {
+                Group {
+                    Color.black.opacity(0.9)
+                    //scrollViews are a single element so the 40 spacing is only being applied to the scrollview and the button not each button in the scroll view
+                    VStack(spacing: 40) {
+                        Spacer()
+                        ScrollView {
+                            ForEach(vm.allGenres, id: \.self) { genre in
+                                
+                                Button {
+                                    homeGenre = genre
+                                    showGenreSelection = false
+                                    
+                                } label: {
+                                    if genre == homeGenre {
+                                        Text("\(genre.rawValue)")
+                                            .bold()
+                                    } else {
+                                        Text("\(genre.rawValue)")
+                                            .foregroundColor(.gray)
+                                    }
+                                }
+                                .padding(.bottom, 40)
+                            }
+                        }
+                        Spacer()
+                        Button {
+                            showGenreSelection = false
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 40))
+                        }.padding(.bottom, 30)
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
             }
             
         }
@@ -191,3 +239,5 @@ enum HomeGenre: String {
     case Dystopian
     case Weird
 }
+
+
